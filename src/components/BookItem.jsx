@@ -31,7 +31,7 @@ export default function BookItem({ bookInfo }) {
         <div className="space-y-2 mt-4 h-full">
           <h4 className="lws-bookName">{name}</h4>
           <p className="lws-author">{author}</p>
-          <StarBookReview />
+          <StarBookReview rating={rating}/>
           <p className="lws-price">{price}</p>
         </div>
       </div>

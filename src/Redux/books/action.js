@@ -46,7 +46,7 @@ export const EditBookPostByID = (id, book) => {
 
 // Get the book id that have to be updated
 export const deleteBook = (id) => {
-    console.log(id);
+
     return {
         type: DELETE_BOOK,
         payload: id

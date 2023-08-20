@@ -1,7 +1,7 @@
 {
   "books": [
     {
-      "name": "Slow Horses (Deluxe Edition)",
+      "name": "Slow Horses",
       "author": "Mick Herron",
       "thumbnail": "https://m.media-amazon.com/images/I/51Ga5GuElyL._SX331_BO1,204,203,200_.jpg",
       "price": 14,
@@ -26,24 +26,6 @@
       "rating": 4,
       "featured": true,
       "id": 4
-    },
-    {
-      "name": "The Milk And Honey",
-      "author": "Mostak Ahamed",
-      "thumbnail": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Ym9va3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
-      "price": "230",
-      "rating": "5",
-      "featured": true,
-      "id": 5
-    },
-    {
-      "name": "test",
-      "author": "test",
-      "thumbnail": "https://images.unsplash.com/photo-1543002588-bfa74002ed7e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Ym9va3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
-      "price": "235",
-      "rating": "5",
-      "featured": true,
-      "id": 6
     }
   ]
 }

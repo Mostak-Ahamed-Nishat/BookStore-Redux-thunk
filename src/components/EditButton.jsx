@@ -1,4 +1,16 @@
-export default function EditButton() {
+import { useDispatch } from "react-redux";
+import editBookAsyncThunk from "../Redux/books/thunk/editBookAsyncThunk";
+
+export default function EditButton(props) {
+  
+
+  const dispatch = useDispatch();
+
+  const onClickHandler = (e) => {
+    e.preventDefault();
+    dispatch(editBookAsyncThunk(props.id));
+  };
+
   return (
     <>
       <svg
@@ -7,6 +19,7 @@ export default function EditButton() {
         strokeWidth="1.5"
         stroke="currentColor"
         className="w-6 h-6"
+        onClick={(e) => onClickHandler(e)}
       >
         <path
           strokeLinecap="round"

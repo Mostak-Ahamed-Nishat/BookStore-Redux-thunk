@@ -1,2 +1,6 @@
 export const ADD_BOOK = "book/add"
 export const GET_BOOKS = "book/getBooks"
+export const EDIT_BOOKS = "book/editBooks"
+export const GET_EDIT_BOOKS = "book/getEditBooks"
+export const EDIT_BOOKS_POST = "book/editBookPost"
+export const DELETE_BOOK = "book/deleteBook"

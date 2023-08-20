@@ -1,4 +1,17 @@
-export default function DeleteButton() {
+import { useDispatch } from "react-redux";
+import  deleteBookAsyncThunk  from "../Redux/books/thunk/deleteBookAsyncThunk";
+
+export default function DeleteButton(props) {
+  const { id } = props;
+
+  const dispatch = useDispatch();
+
+  const onClickHandler = (e) => {
+    console.log(id);
+    e.preventDefault();
+    dispatch(deleteBookAsyncThunk(id));
+  };
+
   return (
     <div>
       <svg
@@ -7,6 +20,7 @@ export default function DeleteButton() {
         strokeWidth="1.5"
         stroke="currentColor"
         className="w-6 h-6"
+        onClick={(e) => onClickHandler(e)}
       >
         <path
           strokeLinecap="round"

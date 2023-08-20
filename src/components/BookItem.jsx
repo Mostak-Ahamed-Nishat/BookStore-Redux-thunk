@@ -3,7 +3,8 @@ import DeleteButton from "./DeleteButton";
 import StarBookReview from "./StarBookReview";
 
 export default function BookItem({ bookInfo }) {
-  const { name,thumbnail, author, price, rating, featured } = bookInfo;
+  const {id,name, thumbnail, author, price, rating, featured } = bookInfo;
+ 
   return (
     <div className="book-card">
       <img
@@ -13,13 +14,17 @@ export default function BookItem({ bookInfo }) {
       />
       <div className="flex-1 h-full pr-2 pt-2 flex flex-col">
         <div className="flex items-center justify-between">
-          <span className="badge-success lws-Badge">featured</span>
+          {featured ? (
+            <span className="badge-success lws-Badge">featured</span>
+          ) : (
+            <span></span>
+          )}
           <div className="text-gray-500 space-x-2">
             <button className="lws-edit">
-              <EditButton />
+              <EditButton id={id} />
             </button>
             <button className="lws-delete">
-              <DeleteButton />
+              <DeleteButton id={id}/>
             </button>
           </div>
         </div>
